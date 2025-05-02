@@ -3,9 +3,9 @@ import "../../App.css";
 import "../css/reset.css";
 import "../css/blog.css";
 
-const Blog = ({title, name, text, date, time}) => {
+const Blog = ({title, name, text, color}) => {
   return (
-    <div className="blogContainer">
+    <div className="blogContainer" style={{background:color}}>
       <div className="blogTitle">
         <h1>{title}</h1>
       </div>
@@ -15,8 +15,8 @@ const Blog = ({title, name, text, date, time}) => {
           <p>{text}</p>
         </div>
         <div className="ContDateTime">
-          <p className="date">{date}</p>
-          <p className="time">{time}</p>
+          <p className="date"></p>
+          <p className="time"></p>
         </div>
       </div>
     </div>
